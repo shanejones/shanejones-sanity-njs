@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "format": "npx prettier --write . --ignore-path .gitignore",
+    "lint": "next lint -- --ignore-path .gitignore",
+    "lint:fix": "npm run format && npm run lint -- --fix",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "stitches"
+    }
+  },
+  "dependencies": {
+    "@portabletext/react": "^1.0.6",
+    "@sanity/image-url": "^1.0.1",
+    "@sanity/vision": "3.0.0-dev-preview.22",
+    "@sanity/webhook": "^2.0.0",
+    "@stitches/react": "^1.2.8",
+    "date-fns": "^2.29.3",
+    "next": "^13.0.0",
+    "next-sanity": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "sanity": "3.0.0-dev-preview.22",
+    "sanity-plugin-asset-source-unsplash": "3.0.0-v3-studio.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.23",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^8.26.0",
+    "eslint-config-next": "^13.0.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4",
+    "twin.macro": "^2.8.2",
+    "tailwindcss": "^3.2.1",
+    "babel-plugin-macros": "^3.1.0"
+  }
+}
